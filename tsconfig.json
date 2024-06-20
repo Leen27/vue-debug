@@ -19,5 +19,8 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"]
+  "include": [
+    "packages/global.d.ts",
+    "src",
+  ]
 }

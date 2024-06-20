@@ -2,7 +2,21 @@ import './style.css'
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.ts'
+import { generateCodeFrame } from '@vue/shared'
 
+const source = `
+<div>
+  <template key="one"></template>
+  <ul>
+    <li v-for="foobar">hi</li>
+  </ul>
+  <template key="two"></template>
+</div>
+    `.trim()
+
+    const keyStart = source.indexOf(`key="one"`)
+    const keyEnd = keyStart + `key="one"`.length
+    console.log(generateCodeFrame(source, keyStart, keyEnd))
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
