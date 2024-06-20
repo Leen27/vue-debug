@@ -1,0 +1,21 @@
+{
+  "name": "@vue/shared",
+  "version": "3.4.29",
+  "description": "internal utils shared across @vue packages",
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuejs/core.git",
+    "directory": "packages/shared"
+  },
+  "keywords": [
+    "vue"
+  ],
+  "author": "Evan You",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vuejs/core/issues"
+  },
+  "homepage": "https://github.com/vuejs/core/tree/main/packages/shared#readme"
+}
